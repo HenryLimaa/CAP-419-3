@@ -1,3 +1,5 @@
+import math # importação da biblioteca math
+
 # divisão
 5 / 2
 # 2.5
@@ -60,21 +62,17 @@
 # 6.0
 
 # Logaritmo na base 10: log10x
-import math # importação da biblioteca math
 5 * math.log10(100) - 8 ** 2
 # -54.0
 
 # exibindo valor de pi
-import math # importação da biblioteca math
 math.pi
 # 3.141592653589793
 
 # função seno
-import math # importação da biblioteca math
 math.sin(math.pi / 2 )
 # 1.0
 
 # função cosseno
-import math # importação da biblioteca math
 math.cos(math.pi / 4 )
 # 0.7071067811865476

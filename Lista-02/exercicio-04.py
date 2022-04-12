@@ -31,5 +31,12 @@ lon2 = radians(lon2)
 dLat = lat2 - lat1
 dLon = lon2 - lon1
 
+#formula de Haversine
+A = pow(sin(dLat/2), 2)
+B = cos(lat1) * cos(lat2)
+C = pow(sin(dLon/2), 2)
+D = sqrt(A + B * C)
+E = 2 * R * asin(D)
+
 print(E)
 # 89.83574577076772

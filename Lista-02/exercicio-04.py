@@ -21,7 +21,6 @@ lat2 = radians(lat2)
 lon1 = radians(lon1)
 lon2 = radians(lon2)
 
-
 # Fórmula
 # lat1 = lat1 * pi / 180
 # lat2 = lat2 * pi / 180
@@ -31,7 +30,6 @@ lon2 = radians(lon2)
 #Delta
 dLat = lat2 - lat1
 dLon = lon2 - lon1
-
 
 print(E)
 # 89.83574577076772

@@ -2,16 +2,17 @@
 import math
 from math import asin, cos, pi, radians, sin, sqrt
 
+#Perguta ao usuário lat1/lon1          # São Bernardo do Campo
+lat1 = float(input("Latitude 1: "))    #lat1 = -23.6944 #latitude
+lon1 = float(input("Longitude 1: "))   #lon1 = -46.5654 #longitude
+
+#Perguta ao usuário lat2/lon2          # São José dos Campos
+lat2 = float(input("Latitude 2: "))    #lat2 = -23.1791 #latitude
+lon2 = float(input("Longitude 2: "))   #lon2 = -45.8872 #longitude
+
 #Constantes
-# São Bernardo do Campo
-lat1 = -23.6944 #latitude
-lon1 = -46.5654 #longitude
-# São José dos Campos
-lat2 = -23.1791 #latitude
-lon2 = -45.8872 #longitude
 # Raio Médio da Terra
 R = 6371
-
 
 #Conversão para radianos
 #Função

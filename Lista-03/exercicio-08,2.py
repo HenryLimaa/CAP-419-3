@@ -5,8 +5,6 @@
 #...possibilitando que o usuário entre com as informações de dois pontos pertencentes à reta, 
 #...bem como o ponto para o qual deva ser avaliada a distância.
 
-Nota
-
 # 1° ponto da reta:
 
 x1 = int(input("Digite o valor da coordenada x do primeiro ponto da sua reta: "))

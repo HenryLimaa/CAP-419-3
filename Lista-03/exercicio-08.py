@@ -23,36 +23,27 @@ def main():
   # ler os dados do segundo ponto
   x2 = float(input("Informe o x do segundo ponto: "))
   y2 = float(input("Informe o y do segundo ponto: "))
+
+  # Perguntando ao usuário o ponto para o qual deva ser avaliada a distância:
+  x = int(input("Digite o valor da coordenada x do ponto para o qual deva ser avaliada a distância: "))
+  y = int(input("Digite o valor da coordenada y do ponto para o qual deva ser avaliada a distância: "))
      
   # obter a distância entre eles
   distancia = distancia2d(x1, y1, x2, y2)
   print("Distância entre os dois pontos: %0.2f" % distancia);
+
+  # calculando a menor distância entre um ponto e uma reta.
+
+  # Calculando o h(x,y):
+  n = (y2 - y1) * (x - x1) - (x2 - x1) * (y - y1)
+  d = math.sqrt((x2 - x1)*2 + (y2 - y1)*2)
+
+  if (d <= 0):
+    print("Denominador menor que zero, temos uma indeterminação!")
+  else:
+   h = abs(n/d)
+
+  print("A menor distância entre o ponto e a reta é", h,".")
   
   if __name__== "__main__":
   main()
-  
-  import math
-
-# calculando a menor distância entre um ponto e uma reta.
-# 1° ponto da reta:
-x1 = int(input("Digite o valor da coordenada x do primeiro ponto da sua reta: "))
-y1 = int(input("Digite o valor da coordenada y do primeiro ponto da sua reta: "))
-
-# 2° ponto da reta:
-x2 = int(input("Digite o valor da coordenada x do segundo ponto da sua reta: "))
-y2 = int(input("Digite o valor da coordenada y do segundo ponto da sua reta: "))
-
-# Perguntando o ponto para o qual deva ser avaliada a distância:
-x = int(input("Digite o valor da coordenada x do ponto para o qual deva ser avaliada a distância: "))
-y = int(input("Digite o valor da coordenada y do ponto para o qual deva ser avaliada a distância: "))
-
-# Calculando o h(x,y):
-n = (y2 - y1) * (x - x1) - (x2 - x1) * (y - y1)
-d = math.sqrt((x2 - x1)*2 + (y2 - y1)*2)
-
-if (d <= 0):
-    print("Denominador menor que zero, temos uma indeterminação!")
-else:
-   h = abs(n/d)
-
-print("A menor distância entre o ponto e a reta é", h,".")
